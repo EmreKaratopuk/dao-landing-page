@@ -13,7 +13,7 @@ ThemeData appTheme() {
     textTheme: const TextTheme(
       titleLarge: TextStyle(
         color: Color(0xFFFFFFFF),
-        fontSize: 15,
+        fontSize: 18,
       ),
       labelMedium: TextStyle(
         fontSize: 18,

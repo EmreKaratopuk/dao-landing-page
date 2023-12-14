@@ -30,8 +30,60 @@ class _HomeState extends State<Home> {
               children: [
                 const Heading(),
                 const SizedBox(height: 200),
-                const IconTitle(),
-                const SizedBox(height: 50),
+                Padding(
+                  padding: EdgeInsets.symmetric(
+                      horizontal: MediaQuery.of(context).size.width / 8),
+                  child: Column(
+                    children: [
+                      const IconTitle(),
+                      const SizedBox(height: 50),
+                      Text(
+                        "Welcome to the Awesome DAO – a standout leader among decentralized organizations. We're proud to be one of the biggest DAOs, driving innovation and community-driven decisions. Join us as we shape the future of decentralized communities together!",
+                        style: Theme.of(context).textTheme.titleLarge,
+                        textAlign: TextAlign.center,
+                      ),
+                      const SizedBox(height: 50),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          SizedBox(
+                            width: MediaQuery.of(context).size.width / 5,
+                            height: 50,
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(
+                                      10.0), // Adjust the radius as needed
+                                ),
+                              ),
+                              child: Text('Join Awesome DAO',
+                                  style:
+                                      Theme.of(context).textTheme.labelMedium),
+                            ),
+                          ),
+                          SizedBox(
+                            width: MediaQuery.of(context).size.width / 5,
+                            height: 50,
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(
+                                      10.0), // Adjust the radius as needed
+                                ),
+                              ),
+                              child: Text(
+                                'Read More ->',
+                                style: Theme.of(context).textTheme.labelMedium,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),

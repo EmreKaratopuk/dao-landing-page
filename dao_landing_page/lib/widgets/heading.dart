@@ -65,9 +65,22 @@ class Heading extends StatelessWidget {
         ),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
-          child: Text(
-            'Launch App',
-            style: Theme.of(context).textTheme.labelMedium,
+          child: SizedBox(
+            width: 150,
+            height: 40,
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(
+                      10.0), // Adjust the radius as needed
+                ),
+              ),
+              onPressed: () {},
+              child: Text(
+                'Launch App',
+                style: TextStyle(fontSize: 18),
+              ),
+            ),
           ),
         ),
       ],

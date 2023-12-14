@@ -17,7 +17,7 @@ class IconTitle extends StatelessWidget {
         const SizedBox(height: 20),
         Center(
           child: Text(
-            'Welcome to Awesome DAO',
+            'Awesome DAO',
             style: Theme.of(context).textTheme.displayLarge,
           ),
         ),
